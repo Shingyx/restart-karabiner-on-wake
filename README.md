@@ -2,7 +2,7 @@
 
 A small background service which restarts Karabiner-Elements processes upon unlocking your MacBook. This can work around issues such as https://github.com/pqrs-org/Karabiner-Elements/issues/1641 until they are resolved.
 
-This is done by running `pkill` on Karabiner-Elements processes owned by the current user. These are then immediately restarted by some other Karabiner-Elements process.
+This is done by running `pkill` on Karabiner-Elements processes owned by the current user when the service receives the `"com.apple.screenIsUnlocked"` event. These are then immediately restarted by some other Karabiner-Elements process.
 
 ## Usage
 
