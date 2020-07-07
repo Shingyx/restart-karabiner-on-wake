@@ -1,3 +1,5 @@
+#!/usr/bin/swift
+
 //
 //  main.swift
 //  restart-karabiner-on-wake
