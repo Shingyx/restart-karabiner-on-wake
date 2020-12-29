@@ -6,7 +6,9 @@ This is done by running `pkill` on Karabiner-Elements processes owned by the cur
 
 ## Usage
 
-Save the `restart-karabiner-on-wake` console application from the [latest GitHub release](https://github.com/Shingyx/restart-karabiner-on-wake/releases/latest) to somewhere on your Mac. Make this executable with `chmod +x restart-karabiner-on-wake`. Next, make this launch on login with launchd by creating the file `~/Library/LaunchAgents/com.user.restart-karabiner-on-wake.plist` with the following content (but replace `/full/path/to/restart-karabiner-on-wake` with the full path to where you saved the application):
+Save the `restart-karabiner-on-wake` console application from the [latest GitHub release](https://github.com/Shingyx/restart-karabiner-on-wake/releases/latest) to somewhere on your Mac. Make this executable with `chmod +x restart-karabiner-on-wake`.
+
+Next, make this launch on login with launchd by creating the file `~/Library/LaunchAgents/com.user.restart-karabiner-on-wake.plist` with the following content (but replace `/full/path/to/restart-karabiner-on-wake` with the full path to where you saved the application):
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
